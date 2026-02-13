@@ -146,7 +146,12 @@ PART 3 — Install TimescaleDB
 
 Step 6.12: Install TimescaleDB Package
 
+sudo sh -c "echo 'deb https://packagecloud.io/timescale/timescaledb/ubuntu/ jammy main' > /etc/apt/sources.list.d/timescaledb.list"
+wget --quiet -O - https://packagecloud.io/timescale/timescaledb/gpgkey | sudo apt-key add -
+sudo apt update
 sudo apt install -y timescaledb-2-postgresql-17
+psql --version
+sudo -u postgres psql -c "CREATE EXTENSION IF NOT EXISTS timescaledb;"
 
 What this does:
 - Installs TimescaleDB extension binaries.
