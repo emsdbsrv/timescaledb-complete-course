@@ -1,6 +1,8 @@
 echo "Done!"
 #!/bin/bash
 
+# Auto-sync script - Updated
+
 git config core.safecrlf false
 git config core.autocrlf true
 
@@ -18,12 +20,7 @@ echo ""
 
 git add .
 
-echo "Enter commit message:"
-read -p "> " msg
-
-if [ -z "$msg" ]; then
-    msg="Update: $(date '+%Y-%m-%d %H:%M:%S')"
-fi
+msg="Updated"
 
 echo ""
 echo "Staging files..."
