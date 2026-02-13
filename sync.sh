@@ -1,3 +1,4 @@
+echo "Done!"
 #!/bin/bash
 
 git config core.safecrlf false
@@ -12,15 +13,31 @@ if [ "$BRANCH" = "master" ]; then
     BRANCH="main"
 fi
 
+echo "Current branch: $BRANCH"
+echo ""
+
 git add .
 
-read -p "Commit message: " msg
+echo "Enter commit message:"
+read -p "> " msg
 
 if [ -z "$msg" ]; then
     msg="Update: $(date '+%Y-%m-%d %H:%M:%S')"
 fi
 
+echo ""
+echo "Staging files..."
+git add .
+
+echo "Committing with message: $msg"
 git commit -m "$msg"
+
+echo "Pushing to origin/$BRANCH..."
 git push -u origin $BRANCH
 
-echo "Done!"
+echo ""
+echo "=========================================="
+echo "✓ Sync complete!"
+echo "Branch: $BRANCH"
+echo "Message: $msg"
+echo "=========================================="
