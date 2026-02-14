@@ -1,6 +1,5 @@
 **Lesson_05_WAL_Analysis_and_Write_Performance** demo.
 
-It follows the same structure as Lesson 3 and 4:
 
 * Assumes PostgreSQL 17 + TimescaleDB already installed
 * Uses `psql -d db_name -c ""` format everywhere
