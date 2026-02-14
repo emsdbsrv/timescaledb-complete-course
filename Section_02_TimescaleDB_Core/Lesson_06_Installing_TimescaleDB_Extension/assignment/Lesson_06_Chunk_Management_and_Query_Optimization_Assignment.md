@@ -340,11 +340,3 @@ You should be able to:
 
 ---
 
-If you'd like, I can now:
-
-* Regenerate the PPT aligned exactly to this assignment
-* Bundle Demo + Assignment + PPT
-* Continue to Lesson 07 (Continuous Aggregates Deep Dive)
-* Add interview questions section
-
-Tell me next.

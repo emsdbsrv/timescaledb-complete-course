@@ -355,8 +355,3 @@ Environment is now fully cleaned.
 
 ---
 
-If you'd like, I can now:
-
-• Regenerate the Assignment in the same deep detailed format
-• Rewrite the PPT to match this exact demo structure
-• Continue to Lesson 07 with same structured depth
